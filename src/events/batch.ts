@@ -1,6 +1,7 @@
 import { EventBridgeEvent } from 'aws-lambda';
 
 type Detail = {
+  'instance-id': string;
   state: 'pending' | 'running' | 'stopping' | 'stopped';
 };
 
